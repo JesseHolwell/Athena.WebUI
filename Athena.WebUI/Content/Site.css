@@ -1,0 +1,68 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('sweeney.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center top;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#frame {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    width: 300px;
+}
+
+#header {
+    width: 100%;
+    padding: 8px;
+    background-color: #1299AD;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+#body {
+    display: none;
+    background-color: #fff
+}
+
+    #body iframe {
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        height: 400px;
+    }
+
+        #body iframe .wc-message-groups {
+            top: 0px;
+        }
+
+        #body iframe .wc-header {
+            display: none;
+            height: 0px;
+        }

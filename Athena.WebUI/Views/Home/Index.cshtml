@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="frame">
+    <div id="header">Chat <span class="pull-right">...</span></div>
+    <div id="body">
+        <iframe id="chat" src="https://webchat.botframework.com/embed/athena-test?s=kpEi_gY4Xzs.cwA.L_o.h-jJ2ZY_Dew-j31ZwgZsn2CLrtEp2lBPGics73IARB4"></iframe>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+
+
+    $(function () {
+        $("#header").click(function () {
+
+            $(".wc-header").hide();
+
+            if ($("#body").is(":visible"))
+                $("#body").slideUp();
+            else
+                $("#body").slideDown();
+
+        })
+
+    })
+
+</script>
